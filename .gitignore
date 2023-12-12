@@ -1,0 +1,14 @@
+# Binary
+
+*.exe
+*.ddl
+*.so
+*.dylib
+
+# Coverage
+
+*.out
+
+Db folder
+
+db/
