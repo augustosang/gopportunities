@@ -2,7 +2,7 @@ package dtos
 
 import "fmt"
 
-func errParamIsRequired(name, typ string) error {
+func ErrParamIsRequired(name, typ string) error {
 	return fmt.Errorf("paramr: %s (type: %s) is required", name, typ)
 }
 
@@ -21,22 +21,22 @@ func (r *CreateOpeningDto) Validate() error {
 	}
 
 	if r.Role == "" {
-		return errParamIsRequired("role", "string")
+		return ErrParamIsRequired("role", "string")
 	}
 	if r.Company == "" {
-		return errParamIsRequired("company", "string")
+		return ErrParamIsRequired("company", "string")
 	}
 	if r.Location == "" {
-		return errParamIsRequired("location", "string")
+		return ErrParamIsRequired("location", "string")
 	}
 	if r.Remote == nil {
-		return errParamIsRequired("remote", "bool")
+		return ErrParamIsRequired("remote", "bool")
 	}
 	if r.Link == "" {
-		return errParamIsRequired("link", "string")
+		return ErrParamIsRequired("link", "string")
 	}
 	if r.Salary <= 0 {
-		return errParamIsRequired("salary", "int64")
+		return ErrParamIsRequired("salary", "int64")
 	}
 
 	return nil
