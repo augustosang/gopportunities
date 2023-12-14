@@ -44,7 +44,12 @@ type ShowOpeningResponse struct {
 	Data    dtos.OpeningResponseDto `json:"data"`
 }
 
-type SListOpeningsResponse struct {
+type ListOpeningsResponse struct {
 	Message string                    `json:"message"`
 	Data    []dtos.OpeningResponseDto `json:"data"`
+}
+
+type UpdateOpeningResponse struct {
+	Message string                  `json:"message"`
+	Data    dtos.OpeningResponseDto `json:"data"`
 }
