@@ -15,7 +15,7 @@ import (
 // @Tags Openings
 // @Accept json
 // @Produce json
-// @Param request body dtos.CreateOpeningDto true "Request Body"
+// @Param request body dtos.CreateOpeningDto true "Request body"
 // @Succes 200 {object} CreateOpeningResponse
 // @Failure 400 {object} ErrorResponse
 // @Failure 500 {object} ErrorResponse
